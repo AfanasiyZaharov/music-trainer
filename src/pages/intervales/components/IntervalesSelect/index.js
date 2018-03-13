@@ -38,6 +38,7 @@ class IntervalesSelect extends Component {
       this.props.onIntervalConfirmed();
     } else {
       this.setState({ error: true });
+      this.props.onIntervalFailed();
       setTimeout(() => { this.setState({ error: false }); }, 500);
     }
   }
