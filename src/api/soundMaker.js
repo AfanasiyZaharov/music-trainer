@@ -16,7 +16,7 @@ export const makeSound = (noteName = 'E', octave = LIST_OCTAVES_NUBMER) => {
   g.gain.exponentialRampToValueAtTime(0.0000001, context.currentTime + 6);
   setTimeout(() => {
     context.close();
-  }, 3000);
+  }, 1000);
 }
 
 
